@@ -5,12 +5,12 @@ public class MissingNumbers {
     //The condition of the problem does not indicate whether it is necessary to search for the missing number
     //if the input array is already arranged in order. To enable/disable this function, add a special flag
     //to the method arguments
-    public int findMissingNumber(int[] numbersArray, boolean addNumberInLastPosition) {
+    public int findMissingNumber(int[] numbersArray, boolean addNumberInLastPosition) { //you don't need the second param for this task
         int result = -1;
         int n = numbersArray.length;
 
         //if the input array of numbers is empty, return -1 as a result
-        if (n < 1) {
+        if (n < 1) { //it will be better if n<2
             return result;
         }
 
@@ -42,6 +42,7 @@ public class MissingNumbers {
             if (checkMissingNumbers % 1 == 0.0 || checkMissingNumbers % 1 == 0.5) {
                 return result;
             }
+            //if array without a missing number return -1 
         }
 
         //At the end, the result is given to the order of numbers in the original array.
